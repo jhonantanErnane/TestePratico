@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" ng-app="testePratico">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>Barros Corretora</title>
+</head>
+<body ng-controller="ctrlDestaques">
+	<div class="content-fluid">
+	<!-- Inicio menu/Topo -->
+		<div id="topo">
+			<img src="imagens/topo.jpg" class="img-responsive" alt="Topo" />
+		</div>
+		
+		<div class="conteudo col-sm-12"><!-- Inicio Conteudo -->
+			<div class="tituloDestaqueVenda col-sm-offset-2 col-sm-4"><!-- Inicio Titulo Destaque -->
+				<h2 id="destaque"><a href="#">Destaques Venda</a></h2>
+				<img src="imagens/setadestaque.jpg" id="seta" alt="seta para baixo" />
+			</div>
+			<div class="tituloDestaqueAluguel col-sm-4">
+				<h2>Destaques Aluguel</h2>
+			</div>
+			<!-- Fim Titulo Destaque -->
+			<div class="conteudo-venda content col-sm-12"> <!-- Inicio todo conteudo dos destaques-->
+				<div class="anuncio-venda col-sm-6"><!-- Primeiro anuncio -->
+					<img src="imagens/destaque1.jpg" class="col-sm-6" alt="Casa"/>
+					<div class="titulo-venda col-sm-6">
+						<h2 id="bairro1">{{bairro}} <br/>{{tipo}}</h2> 
+					</div>
+					<div class="venda-desc col-sm-6">
+						<div class="area col-sm-6">
+							<img src="imagens/area.jpg" alt="area"/><span> {{tamanho}} m²</span>
+						</div>
+						<div class="banho col-sm-6">
+							<img src="imagens/gota.jpg" alt="banheiros"/><span> {{banheiros}} banho(s)</span>
+						</div>
+						<div class="area col-sm-6">
+							<img src="imagens/cama.jpg" alt="Quartos"/><span> {{quartos}} quarto(s)</span>
+						</div>
+						<div class="banho col-sm-6">
+							<img src="imagens/carro.jpg" alt="vaga de garagem"/><span> {{vagas}} vaga(s)</span>
+						</div>
+						<br/><br/>
+						<hr/>
+						<span class="preco">{{preco}}</span> 
+						<button class="btn-plus glyphicon glyphicon-plus" id="btn-plus1" onmouseover="mudaricon(this)" onmouseout="voltaricon(this)" data-toggle="modal" data-target="#ModalContato"></button>
+					</div>
+				</div> <!-- Fim Primeiro anuncio -->
+				<div class="anuncio-venda col-sm-6"> <!-- Inicio Segundo anuncio -->
+					<img src="imagens/destaque2.jpg" class="col-sm-6" alt="Casa"/>
+					<div class="titulo-venda col-sm-6">
+						<h2 id="bairro2">{{bairro}} <br/>{{tipo}}</h2> 
+					</div>
+					<div class="venda-desc col-sm-6">
+						<div class="area col-sm-6">
+							<img src="imagens/area.jpg" alt="area"/><span> {{tamanho}} m²</span>
+						</div>
+						<div class="banho col-sm-6">
+							<img src="imagens/gota.jpg" alt="banheiros"/><span> {{banheiros}} banho(s)</span>
+						</div>
+						<div class="area col-sm-6">
+							<img src="imagens/cama.jpg" alt="Quartos"/><span> {{quartos}} quarto(s)</span>
+						</div>
+						<div class="banho col-sm-6">
+							<img src="imagens/carro.jpg" alt="vaga de garagem"/><span> {{vagas}} vaga(s)</span>
+						</div>
+						<br/><br/>
+						<hr/>
+						<span class="preco">{{preco}}</span> 
+						<button class="btn-plus glyphicon glyphicon-plus" id="btn-plus2" onmouseover="mudaricon(this)" onmouseout="voltaricon(this)" data-toggle="modal" data-target="#ModalContato"></button>
+					</div>
+				</div><!-- Fim Segundo anuncio -->
+				<div class="anuncio-venda col-sm-6"><!-- Inicio Terceiro anuncio -->
+					<img src="imagens/destaque1.jpg" class="col-sm-6" alt="Casa"/>
+					<div class="titulo-venda col-sm-6">
+						<h2 id="bairro3">{{bairro}} <br/>{{tipo}}</h2> 
+					</div>
+					<div class="venda-desc col-sm-6">
+						<div class="area col-sm-6">
+							<img src="imagens/area.jpg" alt="area"/><span> {{tamanho}} m²</span>
+						</div>
+						<div class="banho col-sm-6">
+							<img src="imagens/gota.jpg" alt="banheiros"/><span> {{banheiros}} banho(s)</span>
+						</div>
+						<div class="area col-sm-6">
+							<img src="imagens/cama.jpg" alt="Quartos"/><span> {{quartos}} quarto(s)</span>
+						</div>
+						<div class="banho col-sm-6">
+							<img src="imagens/carro.jpg" alt="vaga de garagem"/><span> {{vagas}} vaga(s)</span>
+						</div>
+						<br/><br/>
+						<hr/>
+						<span class="preco">{{preco}}</span> 
+						<button class="btn-plus glyphicon glyphicon-plus" id="btn-plus3" onmouseover="mudaricon(this)" onmouseout="voltaricon(this)" data-toggle="modal" data-target="#ModalContato"></button>
+					</div>
+				</div><!-- Fim Terceiro anuncio -->
+				<div class="anuncio-venda col-sm-6"> <!-- Inicio Quarto anuncio -->
+					<img src="imagens/destaque2.jpg" class="col-sm-6" alt="Casa"/>
+					<div class="titulo-venda col-sm-6">
+						<h2 id="bairro4">{{bairro}} <br/>{{tipo}}</h2> 
+					</div>
+					<div class="venda-desc col-sm-6">
+						<div class="area col-sm-6">
+							<img src="imagens/area.jpg" alt="area"/><span> {{tamanho}} m²</span>
+						</div>
+						<div class="banho col-sm-6">
+							<img src="imagens/gota.jpg" alt="banheiros"/><span> {{banheiros}} banho(s)</span>
+						</div>
+						<div class="area col-sm-6">
+							<img src="imagens/cama.jpg" alt="Quartos"/><span> {{quartos}} quarto(s)</span>
+						</div>
+						<div class="banho col-sm-6">
+							<img src="imagens/carro.jpg" alt="vaga de garagem"/><span> {{vagas}} vaga(s)</span>
+						</div>
+						<br/><br/>
+						<hr/>
+						<span class="preco">{{preco}}</span> 
+						<button class="btn-plus glyphicon glyphicon-plus" id="btn-plus4" onmouseover="mudaricon(this)" onmouseout="voltaricon(this)" data-toggle="modal" data-target="#ModalContato"></button>
+					</div>
+				</div> <!-- Fim Quarto anuncio -->
+				
+			</div> <!-- Fim todo conteudo dos destaques -->
+				
+		</div><!-- Fim Conteudo -->	
+		<!-- Inicio Rodapé -->
+		<div id="rodape">
+			<img src="imagens/rodape.jpg" class="img-responsive" alt="Rodapé">
+		</div><!-- Fim Rodapé -->
+		<!-- Inicio Modal -->
+			<div class="modal" id="ModalContato">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h3>Fale conosco</h3>
+						</div>
+						<div class="modalcontent">
+			    			<div class="modal-Subtitulo">
+			    				<p>Entre em contato conosco, estamos a disposição para atendê-los!</p>
+							</div>
+							<div>
+							   	<form class="frm-envio-msg">
+									<div class="form-group">
+							  			<label for="iptNome">Nome</label>
+							  			<input type="text" class="form-control" id="iptNome" placeholder="Digite seu nome">
+							  		</div>
+							  		<div class="form-group">
+							  			<label for="iptEmail">Password</label>
+							  			<input type="email" class="form-control" id="iptEmail" placeholder="Digite seu email">
+							  		</div>
+							  		<div class="form-group">
+							  			<label for="iptTel">Telefones</label>
+							  			<input type="tel" class="form-control" id="iptTel">
+							  			<button class="btn glyphicon glyphicon-plus-sign"></button>
+							  		</div>
+							  		<div class="form-group">
+							  			<label for="txtArea">Mensagem</label>
+							  			<textarea class="form-control" id="txtArea" rows="3"></textarea>
+							  		</div>
+								</form>
+			    			</div>
+						    <div class="modal-msg">
+						    	<button type="button" class="btn-enviar-msg btn btn-lg">Enviar mensagem</button>
+						    </div>
+		    			</div>
+					    <div class="modal-footer">
+					      <button class="btn btn-fechar">Fechar</button>
+					    </div>
+		  			</div>
+				</div>
+			</div><!-- Fim Modal -->
+	</div>  <!-- Fim content-fluid -->
+
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery-min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

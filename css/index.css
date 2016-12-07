@@ -1,0 +1,162 @@
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.content{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.frm-envio-msg{
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgb(154,49,53);
+    color: white;
+}
+
+h3{
+    /*font-family: Open Sans light;*/
+    font-size: large;
+    margin-top: 0;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    /*background-color: rgb(154,49,53);*/
+    color: white;
+}
+
+.modal-Subtitulo{
+    text-align: center;
+}
+.btn-enviar-msg{
+    background-color: rgb(154,49,53);
+    color: #fff;
+    margin-bottom: 2%;
+}
+.modal-msg{
+    text-align: center;
+}
+.btn-fechar{
+    color: #000;
+}
+
+#iptTel{
+    width: 90%;
+    display: initial;
+}
+
+.tituloDestaqueAluguel{
+    text-align: center;
+    color: rgb(219,170,174);
+}
+
+.tituloDestaqueVenda {
+    text-align: center;
+    color: rgb(163,67,69);
+    text-decoration: none;
+}
+.tituloDestaqueVenda a{
+    text-align: center;
+    color: rgb(163,67,69);
+    text-decoration: none;
+}
+.conteudo-venda{
+    margin-top: 3%;
+}
+.anuncio-venda{
+    margin-bottom: 3%;
+    padding-right: 0;
+}
+
+.conteudo-venda h2 {
+    color: rgb(57,57,57);
+    margin:0;
+    padding:0;
+    font-size: large;
+}
+.titulo-venda{
+    /*background-color: blue;*/
+}
+.anuncio-venda img{
+    padding-right: 0;
+
+}
+.area ,.banho{
+    padding:0;
+}
+.venda-desc{
+    margin-top: 4%;
+    padding-right: 0;
+    /*background-color: red;*/
+}
+.btn-plus{
+    border: none;
+    background: none;
+    color: rgb(153,52,56);
+}
+/*a :hover{
+    text-align: center;
+    color: rgb(163,67,69);
+    text-decoration: none;
+}*/
+.preco{
+    color: rgb(153,52,58);
+    font-size: x-large;
+}
+hr{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.aparece{
+    display: initial;
+}
+.desaparece{
+    display: none;
+}
+
+
+
+
